@@ -1,0 +1,28 @@
+<html>
+<head>
+  <title>Count Characters</title>
+  <style>
+  body{
+  font-family : Arial;
+  text-align : center;
+  margin : sopx;
+  {
+  </style>
+  
+  <script>
+   function countCharacters() {
+      var name = document.getElementById("name").value;
+      var numCharacters = name.length;
+      document.getElementById("result").innerHTML = "Your name contains " + numCharacters + " characters.";
+
+    }
+  </script>
+  </head>
+  <body>
+   <h2>Character Counter</h2>
+  <label for="name">Enter your name:</label>
+  <input type="text" id="name" name="name">
+  <button onclick="countCharacters()">Count</button>
+  <p id="result"></p>
+</body>
+</html>
